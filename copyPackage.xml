@@ -13,9 +13,13 @@
 	
 	
 	<target name="publishBuild" description="main deploy task">
-	   <copy todir="C:\Sreekanth\git\cbk\assets\IS\packages\${packageName}" verbose="true" overwrite="true">
+	  <!-- <copy todir="C:\Sreekanth\git\cbk\assets\IS\packages\${packageName}" verbose="true" overwrite="true">
           <fileset dir="C:\Sreekanth\git\cbk\assets\IS\packages\${packageName}" includes="**"/>
-        </copy>	
+        </copy> -->
+		
+		<copydir src="C:\SoftwareAG\IS\IntegrationServer\instances\default\packages\${packageName}"
+         dest="C:\Sreekanth\git\cbk\assets\IS\packages\${packageName}"
+		 forceoverwrite="true"/>
 	</target>
 	
 		
