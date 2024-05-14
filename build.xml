@@ -11,7 +11,8 @@
 <project name="Build and Deploy Solution" default="buildDeployTest" basedir="." >
 	<!--<property file="${project.properties}"/>
 	<property file="System.properties"/> -->
-        
+	
+    <import file="buildInitProject.xml"/>    
 	<import file="copyPackage.xml"/>
 	
 

@@ -10,10 +10,10 @@
 
 <project name="ProjectInitializer" default="" basedir="." >
 	
-	<!-- system properties properties 
+	<!-- system properties properties -->
 	<target name="initSAGHome" unless="SAGHome">
 		<fail message="System property 'SAGHome' should be defined!"/>
-	</target>-->
+	</target>
 
 
 			
@@ -32,15 +32,15 @@
 
 
 	
-	<!--Main Init targets
+	<!--Main Init targets-->
 	<target name="initSystemProperties" depends="initSAGHome">
-	</target>-->
+	</target>
 	
 	<target name="initMandatoryProperties" depends="initProjcetName,packageName">
 	</target>
 	
 		
-	<target name="initProject" depends="initMandatoryProperties" description="init properties needed for the project">
+	<target name="initProject" depends="initSystemProperties,initMandatoryProperties" description="init properties needed for the project">
 	</target>
 	
 </project>
