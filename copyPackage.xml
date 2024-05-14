@@ -18,9 +18,7 @@
         </copy>	
 	</target>
 	
-		<target name="createZip">			
-		<zip destfile="C:\Sreekanth\cbkdemo\${BuildNumber}.zip" basedir="C:\Sreekanth\Softwares\jenkins\home\workspace\CBK_PoC\target\CBK_PoC\build" update="true"/>
-	</target>
+		
 
 	
 </project>
